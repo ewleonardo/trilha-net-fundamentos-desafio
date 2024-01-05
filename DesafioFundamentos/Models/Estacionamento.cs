@@ -14,7 +14,7 @@ namespace DesafioFundamentos.Models
 
         public void AdicionarVeiculo()
         {
-            // TODO: Pedir para o usuário digitar uma placa (ReadLine) e adicionar na lista "veiculos"
+            //IMPLEMENTADO!!! TODO: Pedir para o usuário digitar uma placa (ReadLine) e adicionar na lista "veiculos"
             Console.WriteLine("Digite a placa do veículo para estacionar:");
             string placa = Console.ReadLine();
 
@@ -39,14 +39,14 @@ namespace DesafioFundamentos.Models
             {
                 Console.WriteLine("Digite a quantidade de horas que o veículo permaneceu estacionado:");
 
-                // TODO: Pedir para o usuário digitar a quantidade de horas que o veículo permaneceu estacionado,
-                // TODO: Realizar o seguinte cálculo: "precoInicial + precoPorHora * horas" para a variável valorTotal                
+                //IMPLEMENTADO!!! TODO: Pedir para o usuário digitar a quantidade de horas que o veículo permaneceu estacionado,
+                //IMPLEMENTADO!!! TODO: Realizar o seguinte cálculo: "precoInicial + precoPorHora * horas" para a variável valorTotal                
                 // *IMPLEMENTE AQUI*
                 int horas = Convert.ToInt32(Console.ReadLine());
                 decimal valorTotal = 0;
                 valorTotal = precoInicial + (precoPorHora * horas);
 
-                // TODO: Remover a placa digitada da lista de veículos
+                //IMPLEMENTADO!!! TODO: Remover a placa digitada da lista de veículos
                 // *IMPLEMENTE AQUI*
                 Console.WriteLine($"O veículo {placa.ToUpper()} foi removido e o preço total foi de: R$ {valorTotal}");
                 veiculos.Remove(placa);
@@ -94,7 +94,7 @@ namespace DesafioFundamentos.Models
             if (veiculos.Any())
             {
                 Console.WriteLine("Os veículos estacionados são:");
-                // TODO: Realizar um laço de repetição, exibindo os veículos estacionados
+                //IMPLEMENTADO!!! TODO: Realizar um laço de repetição, exibindo os veículos estacionados
                 for (int i = 0; i < veiculos.Count; i++)
                 {
                     Console.WriteLine($"| {i + 1}º - {veiculos[i].ToUpper()}");
